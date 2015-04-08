@@ -1,0 +1,11 @@
+[Unit]
+Description=Terminal Multiplexor
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/tmux new-session -d
+ExecStop=/usr/bin/tmux kill-session
+Restart=always
+
+[Install]
+WantedBy=default.target

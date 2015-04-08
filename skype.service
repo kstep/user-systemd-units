@@ -1,0 +1,8 @@
+[Unit]
+Description=Skype
+
+[Service]
+ExecStart=/usr/bin/skype
+
+[Install]
+WantedBy=default.target
