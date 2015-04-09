@@ -1,0 +1,9 @@
+[Unit]
+Description=Very Simple Layout Switcher
+
+[Service]
+ExecStart=/usr/bin/kbdd --nodaemon
+Restart=always
+
+[Install]
+WantedBy=wm.target
