@@ -1,0 +1,8 @@
+[Unit]
+Description=Unclutter Mouse Hider
+
+[Service]
+ExecStart=/usr/bin/unclutter
+
+[Install]
+WantedBy=wm.target
