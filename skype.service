@@ -5,4 +5,4 @@ Description=Skype
 ExecStart=/usr/bin/skype
 
 [Install]
-WantedBy=default.target
+WantedBy=wm.target
