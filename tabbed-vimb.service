@@ -1,0 +1,8 @@
+[Unit]
+Description=Vimb Browser in Tabbed
+
+[Service]
+ExecStart=/usr/bin/tabbed -n Browser -ps0 -f vimb -e
+
+[Install]
+WantedBy=wm.target
