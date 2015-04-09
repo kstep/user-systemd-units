@@ -1,7 +1,7 @@
 [Unit]
 Description=Window Manager Started
-Requires=xorg.target
-After=xorg.target
+#Requires=xorg.target
+#After=xorg.target
 AllowIsolate=yes
 
 [Install]
