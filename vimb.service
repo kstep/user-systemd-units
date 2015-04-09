@@ -1,0 +1,9 @@
+[Unit]
+Description=Vimb Browser
+
+[Service]
+ExecStart=/usr/bin/vimb
+Restart=on-success
+
+[Install]
+WantedBy=wm.target
