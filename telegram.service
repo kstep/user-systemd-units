@@ -1,0 +1,8 @@
+[Unit]
+Description=Telegram Messaging Client
+
+[Service]
+ExecStart=/usr/bin/telegram
+
+[Install]
+WantedBy=wm.target
