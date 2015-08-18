@@ -2,6 +2,7 @@
 Description=Skype
 
 [Service]
+ExecStartPre=-/usr/bin/rm -f ~/.Skype/shared.lck
 ExecStart=/usr/bin/skype
 
 [Install]
