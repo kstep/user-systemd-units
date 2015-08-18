@@ -1,0 +1,8 @@
+[Unit]
+Description=Viber Messaging Client
+
+[Service]
+ExecStart=/usr/bin/viber
+
+[Install]
+WantedBy=wm.target
