@@ -1,0 +1,8 @@
+[Unit]
+Description=Popcorn Time Video Player
+
+[Service]
+ExecStart=/usr/bin/popcorntime
+
+[Install]
+WantedBy=wm.target
