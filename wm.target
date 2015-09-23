@@ -1,5 +1,7 @@
 [Unit]
 Description=Window Manager Started
+Requires=default.target
+After=default.target
 #Requires=xorg.target
 #After=xorg.target
 AllowIsolate=yes
