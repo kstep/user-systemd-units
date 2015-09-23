@@ -1,0 +1,7 @@
+[Unit]
+Description=Mount Encfs
+
+[Service]
+Environment=DISPLAY=:0
+#ExecStartPre=/usr/bin/mkdir -p $HOME/.private.dec
+ExecStart=/usr/bin/encfs -f --extpass=/usr/lib/ssh/ssh-askpass %I $HOME/.private.dec
