@@ -4,7 +4,7 @@ Description=XRandR Monitors Setup
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/bin/sh -c 'xrandr | awk -v dir=%i \'out { gsub("[^0-9.]", "", $$2); print "--output " out " --mode " $$1 " --rate " $$2 pout; pout = " --" dir " " out; out=0 } / connected/ { out=$$1 }\' | xargs xrandr'
+ExecStart=/bin/sh -c 'xrandr | awk -v crtc=0 -v dir=%i \'out { gsub("[^0-9.]", "", $$2); print "--output " out " --mode " $$1 " --rate " $$2 " --crtc " crtc++ pout; pout = " --" dir " " out; out=0 } / connected/ { out=$$1 }\' | xargs xrandr --verbose'
 
 [Install]
 WantedBy=wm.target

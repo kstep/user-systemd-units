@@ -3,8 +3,7 @@ Description=Eclim Background Service
 
 [Service]
 WorkingDirectory=/usr/share/eclipse
-Environment=JAVA_HOME=/opt/java DISPLAY=:0.0
-ExecStart=/usr/share/eclipse/plugins/org.eclim_2.3.4.58-g5a03a31/bin/eclimd
+ExecStart=/usr/lib/eclipse/plugins/org.eclim_2.5.0/bin/eclimd
 
 [Install]
-WantedBy=default.target
+WantedBy=wm.target
