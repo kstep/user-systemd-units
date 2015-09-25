@@ -2,7 +2,7 @@
 Description=Eclim Background Service
 
 [Service]
-WorkingDirectory=/usr/share/eclipse
+WorkingDirectory=/usr/lib/eclipse
 ExecStart=/usr/lib/eclipse/plugins/org.eclim_2.5.0/bin/eclimd
 
 [Install]
