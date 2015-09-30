@@ -1,0 +1,8 @@
+[Unit]
+Description=Google Chrome Browser
+
+[Service]
+ExecStart=/usr/bin/chromium
+
+[Install]
+WantedBy=wm.target
