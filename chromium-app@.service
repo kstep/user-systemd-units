@@ -1,0 +1,9 @@
+[Unit]
+Description=Run %i as a web app in Chromium
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/chromium --app=https://%i
+
+[Install]
+WantedBy=wm.target
