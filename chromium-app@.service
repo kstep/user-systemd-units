@@ -1,8 +1,9 @@
 [Unit]
 Description=Run %i as a web app in Chromium
+Requires=chromium.service
 
 [Service]
-Type=simple
+Type=oneshot
 ExecStart=/usr/bin/chromium --app=https://%i
 
 [Install]
