@@ -2,7 +2,7 @@
 Description=Google Chrome Browser
 
 [Service]
-ExecStart=/usr/bin/chromium
+ExecStart=/usr/bin/chromium --restore-last-session
 
 [Install]
 WantedBy=wm.target
