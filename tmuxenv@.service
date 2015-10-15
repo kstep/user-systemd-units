@@ -2,6 +2,7 @@
 Description=Set Tmux environment from SystemD
 Requires=tmux@%i.service
 After=tmux@%i.service
+After=wm.target
 
 [Service]
 Type=oneshot
