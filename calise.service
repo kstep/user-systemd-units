@@ -1,0 +1,10 @@
+[Unit]
+Description=Calise auto-brightness daemon
+After=window-manager.service
+
+[Service]
+ExecStart=/usr/bin/calised
+Type=simple
+
+[Install]
+WantedBy=default.target
