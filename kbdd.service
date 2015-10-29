@@ -2,6 +2,7 @@
 Description=Very Simple Layout Switcher
 
 [Service]
+Restart=on-failure
 ExecStart=/usr/bin/kbdd --nodaemon
 Restart=always
 
