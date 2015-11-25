@@ -5,9 +5,7 @@ Description=Simple Terminal Emulator
 
 [Service]
 Type=simple
-#ExecStart=/usr/bin/st -t 'Terminal' -e '/usr/bin/tmux attach -t default'
 ExecStart=/usr/bin/st -t 'Terminal'
-Restart=always
 
 [Install]
 WantedBy=wm.target

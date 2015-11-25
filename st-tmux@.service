@@ -6,7 +6,6 @@ After=tmux@%i.service
 [Service]
 Type=simple
 ExecStart=/usr/bin/st -t 'Terminal' -e /usr/bin/tmux attach -t %I
-Restart=always
 
 [Install]
 WantedBy=wm.target
