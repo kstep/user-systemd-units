@@ -1,0 +1,8 @@
+[Unit]
+Description=i3lock simple screen locker
+
+[Service]
+ExecStart=/usr/bin/i3lock --nofork --image=/home/kstep/background.png
+
+[Install]
+Alias=xorg-locker.service
