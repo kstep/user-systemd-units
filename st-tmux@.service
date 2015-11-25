@@ -1,0 +1,12 @@
+[Unit]
+Description=Simple Terminal Emulator with Tmux (session %i)
+Wants=tmux@%i.service
+After=tmux@%i.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/st -t 'Terminal' -e /usr/bin/tmux attach -t %I
+Restart=always
+
+[Install]
+WantedBy=wm.target
