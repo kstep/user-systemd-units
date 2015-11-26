@@ -2,4 +2,5 @@
 Description=Reload awesome WM
 
 [Service]
+Type=oneshot
 ExecStart=/usr/bin/systemctl --user reload awesome.service
