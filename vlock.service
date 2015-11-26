@@ -1,0 +1,5 @@
+[Unit]
+Description=Lock all consoles with vlock
+
+[Service]
+ExecStart=/usr/bin/vlock -a
