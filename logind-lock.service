@@ -1,0 +1,8 @@
+[Unit]
+Description=Logind locker service
+
+[Service]
+ExecStart=/home/kstep/.multirust/toolchains/nightly/cargo/bin/logind-lock c1 systemctl --user start xorg-locker.service
+
+[Install]
+WantedBy=wm.target
