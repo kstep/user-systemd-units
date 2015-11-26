@@ -3,6 +3,7 @@ Description=Awesome Window Manager
 
 [Service]
 ExecStart=/usr/bin/awesome
+ExecReload=/bin/kill -HUP $MAINPID
 
 [Install]
 WantedBy=wm.target
