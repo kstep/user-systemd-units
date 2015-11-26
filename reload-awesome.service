@@ -1,0 +1,5 @@
+[Unit]
+Description=Reload awesome WM
+
+[Service]
+ExecStart=/usr/bin/systemctl --user reload awesome.service
