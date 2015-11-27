@@ -7,6 +7,7 @@ Type=forking
 Environment=SSH_AUTH_SOCK=%h/.gnupg/S.gpg-agent.ssh
 ExecStartPre=/usr/bin/systemctl --user import-environment SSH_AUTH_SOCK
 ExecStart=/usr/bin/gpg-agent --daemon --enable-ssh-support --no-detach --verbose
+ExecReload=/usr/bin/kill -HUP $MAINPID
 Restart=always
 
 [Install]
