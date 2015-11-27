@@ -1,0 +1,9 @@
+[Unit]
+Description=GPG Agent Socket
+
+[Socket]
+ListenStream=%h/.gnupg/S.gpg-agent
+ListenStream=%h/.gnupg/S.gpg-agent.ssh
+
+[Install]
+WantedBy=sockets.target
