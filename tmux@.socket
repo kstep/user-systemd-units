@@ -1,0 +1,9 @@
+[Unit]
+Description=Tmux Socket (session %i)
+
+[Socket]
+ListenStream=/tmp/tmux-%U/%i
+
+[Install]
+WantedBy=sockets.target
+
