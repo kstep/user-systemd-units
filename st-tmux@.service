@@ -1,6 +1,6 @@
 [Unit]
 Description=Simple Terminal Emulator with Tmux (session %i)
-Wants=tmux@%i.service
+Requires=tmux@%i.service
 After=tmux@%i.service
 
 [Service]
