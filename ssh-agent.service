@@ -7,7 +7,7 @@ Type=simple
 Environment=SSH_AUTH_SOCK=%t/ssh-agent.sock
 ExecStartPre=/usr/bin/systemctl --user import-environment SSH_AUTH_SOCK
 ExecStart=/usr/bin/ssh-agent -D -a $SSH_AUTH_SOCK
-ExecStartPost=-/bin/sh -c "/usr/bin/ssh-add $HOME/.ssh/id_rsa $HOME/.ssh/keys/* < /dev/null"
+#ExecStartPost=-/bin/sh -c "/usr/bin/ssh-add $HOME/.ssh/id_rsa $HOME/.ssh/keys/* < /dev/null"
 Restart=always
 
 [Install]
