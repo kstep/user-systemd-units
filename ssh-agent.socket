@@ -1,8 +1,0 @@
-[Unit]
-Description=SSH Agent Socket
-
-[Socket]
-ListenStream=%t/ssh-agent.sock
-
-[Install]
-WantedBy=sockets.target
