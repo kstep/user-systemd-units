@@ -9,3 +9,4 @@ RestartSec=3
 
 [Install]
 WantedBy=wm.target
+Alias=window-manager.service

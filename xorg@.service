@@ -2,6 +2,8 @@
 Description=Xorg server at display %i
 Requires=xorg@%i.socket
 After=xorg@%i.socket
+Wants=window-manager.service
+Before=window-manager.service
 
 [Service]
 Type=simple
