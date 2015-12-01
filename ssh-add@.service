@@ -1,0 +1,14 @@
+[Unit]
+Requires=ssh-agent.service
+After=ssh-agent.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Environment=SSH_ASKPASS=/usr/lib/ssh/ssh-askpass
+ExecStart=/usr/bin/ssh-add %h/.ssh/%I
+ExecStop=/usr/bin/ssh-add -d %h/.ssh/%I
+
+[Install]
+DefaultInstance=id_rsa
+WantedBy=default.target
