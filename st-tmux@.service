@@ -8,4 +8,5 @@ Type=simple
 ExecStart=/usr/bin/st -t 'Terminal' -e /usr/bin/tmux attach -t %I
 
 [Install]
+DefaultInstance=default
 WantedBy=wm.target

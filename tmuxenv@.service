@@ -1,5 +1,5 @@
 [Unit]
-Description=Set Tmux environment from SystemD
+Description=Set Tmux environment from systemd (session %i)
 Requires=tmux@%i.service
 After=tmux@%i.service
 After=wm.target
@@ -9,4 +9,5 @@ Type=oneshot
 ExecStart=/bin/sh -c '/usr/bin/systemctl --user show-environment | sed -e "s/=/ /" | xargs -n2 /usr/bin/tmux set-environment -t %I'
 
 [Install]
+DefaultInstance=default
 WantedBy=wm.target
