@@ -1,0 +1,8 @@
+[Unit]
+Description=Rebuild Ctags file when directory %I changes
+ConditionPathExists=%h/%I/.ctags
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/%I
+ExecStart=/usr/bin/ctags -R

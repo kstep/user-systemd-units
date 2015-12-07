@@ -1,0 +1,9 @@
+[Unit]
+Description=Rebuild Ctags file when directory %I changes
+
+[Path]
+PathChanged=/home/kstep/%I
+
+[Install]
+WantedBy=default.target
+WantedBy=paths.target
