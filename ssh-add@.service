@@ -1,4 +1,5 @@
 [Unit]
+Description=Add keys into SSH agent
 Requires=ssh-agent.service
 After=ssh-agent.service
 
