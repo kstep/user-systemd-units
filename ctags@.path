@@ -2,7 +2,7 @@
 Description=Rebuild Ctags file when directory %I changes
 
 [Path]
-PathChanged=/home/kstep/%I
+PathModified=/home/kstep/%I
 
 [Install]
 WantedBy=default.target
