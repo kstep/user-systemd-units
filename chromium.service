@@ -3,6 +3,8 @@ Description=Google Chrome Browser
 
 [Service]
 ExecStart=/usr/bin/chromium --restore-last-session
+Restart=always
+RestartSec=0
 
 [Install]
 WantedBy=wm.target
