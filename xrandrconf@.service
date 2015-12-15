@@ -2,7 +2,11 @@
 Description=XRandR Monitors Setup
 
 [Service]
-Type=oneshot
+Type=simple
+RemainAfterExit=yes
+TimeoutStartSec=5
+RestartSec=2
+Restart=on-failure
 ExecStart=/bin/sh -c 'xrandr | awk -v crtc=0 -v dir=%i \'out { gsub("[^0-9.]", "", $$2); print "--output " out " --mode " $$1 " --rate " $$2 " --crtc " crtc++ pout; pout = " --" dir " " out; out=0 } / connected/ { out=$$1 }\' | xargs xrandr --verbose'
 
 [Install]
