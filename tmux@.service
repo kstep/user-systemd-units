@@ -1,5 +1,6 @@
 [Unit]
 Description=Terminal Multiplexor (session %i)
+Before=ssh-agent.service
 
 [Service]
 Type=forking
