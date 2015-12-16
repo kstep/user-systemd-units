@@ -1,3 +1,4 @@
 [Unit]
 Description=Xorg Server Started Target
-
+Wants=window-manager.service
+RefuseManualStart=yes

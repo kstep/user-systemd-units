@@ -4,6 +4,5 @@ Requires=default.target
 Requires=dbus.socket
 After=default.target
 AllowIsolate=yes
+Wants=default.target
 
-[Install]
-WantedBy=default.target

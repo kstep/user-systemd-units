@@ -1,5 +1,8 @@
 [Unit]
 Description=Awesome Window Manager
+After=xorg.target
+Before=wm.target
+Wants=wm.target
 
 [Service]
 ExecStart=/usr/bin/awesome
@@ -8,5 +11,5 @@ Restart=on-failure
 RestartSec=3
 
 [Install]
-WantedBy=wm.target
+WantedBy=xorg.target
 Alias=window-manager.service
