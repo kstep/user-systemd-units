@@ -1,5 +1,6 @@
 [Unit]
 Description=Xorg server at display %i
+StopWhenUnneeded=yes
 Requires=xorg@%i.socket
 After=xorg@%i.socket
 Wants=window-manager.service
