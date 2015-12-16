@@ -1,0 +1,9 @@
+[Unit]
+Description=Notification in Awesome on MPD state change
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c 'while true; do mpc idle player && echo "notify_mpd_song()" | awesome-client; done'
+
+[Install]
+WantedBy=wm.target
