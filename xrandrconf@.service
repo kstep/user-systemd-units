@@ -4,9 +4,9 @@ After=xorg.target
 
 [Service]
 Type=oneshot
-TimeoutSec=5
-ExecStart=/bin/sh -c 'xrandr | awk -v crtc=0 -v dir=%i \'out { gsub("[^0-9.]", "", $$2); print "--output " out " --mode " $$1 " --rate " $$2 " --crtc " crtc++ pout; pout = " --" dir " " out; out=0 } / connected/ { out=$$1 }\' | xargs xrandr --verbose'
+TimeoutSec=10
+ExecStart=/bin/sh -c 'sleep 5; xrandr | awk -v crtc=0 -v dir=%i \'out { gsub("[^0-9.]", "", $$2); print "--output " out " --mode " $$1 " --rate " $$2 " --crtc " crtc++ pout; pout = " --" dir " " out; out=0 } / connected/ { out=$$1 }\' | xargs xrandr --verbose'
 
 [Install]
 DefaultInstance=right-of
-WantedBy=wm.target
+WantedBy=xorg.target
