@@ -5,4 +5,4 @@ ConditionPathExists=%h/%I/.ctags
 [Service]
 Type=oneshot
 WorkingDirectory=%h/%I
-ExecStart=/usr/bin/ctags -R
+ExecStart=/usr/bin/ctags

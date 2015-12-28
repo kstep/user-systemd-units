@@ -11,5 +11,4 @@ Restart=on-failure
 RestartSec=3
 
 [Install]
-WantedBy=xorg.target
 Alias=window-manager.service
