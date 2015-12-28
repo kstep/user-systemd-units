@@ -3,7 +3,7 @@ Description=Notification in Awesome on MPD state change
 
 [Service]
 Type=simple
-ExecStart=/bin/sh -c 'while true; do mpc idle player && echo "notify_mpd_song()" | awesome-client; done'
+ExecStart=/bin/sh -c 'mpc idleloop player | while read; do echo "notify_mpd_song()" | awesome-client; done'
 
 [Install]
 WantedBy=mpd.service
