@@ -1,7 +1,5 @@
 [Unit]
 Description=Simple Terminal Emulator
-#Wants=tmux@default.service
-#After=tmux@default.service
 
 [Service]
 Type=simple
