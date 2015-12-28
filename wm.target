@@ -2,6 +2,8 @@
 Description=Window Manager Started
 Requires=default.target
 Requires=dbus.socket
+Requires=xorg.target
 After=default.target
+After=xorg.target
 AllowIsolate=yes
 
