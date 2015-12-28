@@ -8,5 +8,5 @@ Type=simple
 ExecStart=/usr/bin/st -t 'Terminal'
 
 [Install]
-WantedBy=wm.target
+WantedBy=graphical.target
 Alias=terminal-emulator.service

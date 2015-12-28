@@ -5,4 +5,4 @@ Description=Viber Messaging Client
 ExecStart=/usr/bin/viber
 
 [Install]
-WantedBy=wm.target
+WantedBy=graphical.target

@@ -2,7 +2,7 @@
 Description=Set Tmux environment from systemd (session %i)
 Requires=tmux@%i.service
 After=tmux@%i.service
-After=wm.target
+After=graphical.target
 
 [Service]
 Type=oneshot
@@ -10,4 +10,4 @@ ExecStart=/bin/sh -c '/usr/bin/systemctl --user show-environment | sed -e "s/=/ 
 
 [Install]
 DefaultInstance=default
-WantedBy=wm.target
+WantedBy=graphical.target

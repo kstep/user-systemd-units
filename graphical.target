@@ -1,8 +1,7 @@
 [Unit]
-Description=Window Manager Started
+Description=User GUI
 Requires=default.target
 Requires=dbus.socket
-Requires=xorg.target
 After=default.target
 After=xorg.target
 AllowIsolate=yes

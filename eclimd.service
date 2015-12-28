@@ -6,4 +6,4 @@ WorkingDirectory=/usr/lib/eclipse
 ExecStart=/usr/lib/eclipse/plugins/org.eclim_2.5.0/bin/eclimd
 
 [Install]
-WantedBy=wm.target
+WantedBy=graphical.target

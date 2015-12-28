@@ -6,4 +6,4 @@ Restart=always
 ExecStart=/usr/bin/kbdd --nodaemon
 
 [Install]
-WantedBy=wm.target
+WantedBy=graphical.target

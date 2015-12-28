@@ -5,4 +5,4 @@ Description=Google Chrome Browser
 ExecStart=/usr/bin/google-chrome-beta
 
 [Install]
-WantedBy=wm.target
+WantedBy=graphical.target

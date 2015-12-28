@@ -6,4 +6,4 @@ ExecStart=/usr/bin/calised
 Type=simple
 
 [Install]
-WantedBy=wm.target
+WantedBy=graphical.target

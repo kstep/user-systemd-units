@@ -5,4 +5,4 @@ Description=Logind locker service
 ExecStart=/home/kstep/.multirust/toolchains/nightly/cargo/bin/logind-lock $XDG_SESSION_ID systemctl --user start xorg-locker.service
 
 [Install]
-WantedBy=wm.target
+WantedBy=graphical.target
