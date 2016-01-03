@@ -2,6 +2,7 @@
 Description=Simple Terminal Emulator with Tmux (session %i)
 Requires=tmux@%i.service
 After=tmux@%i.service
+After=xorg.target
 
 [Service]
 Type=simple
