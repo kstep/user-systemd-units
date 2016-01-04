@@ -2,7 +2,7 @@
 Description=Calise auto-brightness daemon
 
 [Service]
-ExecStart=/usr/bin/calised --logfile /dev/stdout
+ExecStart=/usr/bin/calised
 ExecReload=/usr/bin/calised --restart
 Type=simple
 
