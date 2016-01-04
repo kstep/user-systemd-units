@@ -1,5 +1,6 @@
 [Unit]
 Description=Very Simple Layout Switcher
+Before=window-manager.service
 
 [Service]
 Restart=always
