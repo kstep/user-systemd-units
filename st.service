@@ -3,7 +3,8 @@ Description=Simple Terminal Emulator
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/st -t 'Terminal'
+EnvironmentFile=/home/kstep/.config/systemd/user/st.conf
+ExecStart=/usr/bin/st -t ${ST_TITLE} -f ${ST_FONT}
 
 [Install]
 WantedBy=graphical.target
