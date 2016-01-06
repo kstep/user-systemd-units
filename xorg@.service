@@ -8,7 +8,6 @@ Before=xorg.target
 [Service]
 Type=simple
 SuccessExitStatus=0 1
-Environment=DISPLAY=:%i XDG_VTNR=7
+Environment=DISPLAY=:%i
 ExecStartPre=/usr/bin/systemctl --user set-environment DISPLAY=:%i
-ExecStart=/usr/bin/Xorg :%i -nolisten tcp -verbose 2 "vt${XDG_VTNR}"
-ExecStopPost=/usr/bin/sudo /bin/sh -c 'echo 0 > /sys/class/backlight/intel_backlight/bl_power'
+ExecStart=/usr/bin/Xorg ${DISPLAY} -nolisten tcp -verbose 2 "vt${XDG_VTNR}"

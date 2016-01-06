@@ -2,7 +2,6 @@
 Description=Socket for Xorg at display %i
 
 [Socket]
-ExecStartPre=/usr/bin/systemctl --user set-environment DISPLAY=:%i
 ListenStream=/tmp/.X11-unix/X%i
 
 [Install]
