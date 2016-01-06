@@ -4,7 +4,8 @@ Requires=chromium.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/chromium --app=https://%i
+Environment=CHROME_APP_SCHEME=https
+ExecStart=/usr/bin/chromium --app=${CHROME_APP_SCHEME}://%i
 
 [Install]
 WantedBy=graphical.target
