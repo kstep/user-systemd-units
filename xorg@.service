@@ -6,8 +6,9 @@ Wants=xorg.target
 Before=xorg.target
 
 [Service]
-Type=simple
+Type=notify
+NotifyAccess=all
 SuccessExitStatus=0 1
 Environment=DISPLAY=:%i
 ExecStartPre=/usr/bin/systemctl --user set-environment DISPLAY=:%i
-ExecStart=/usr/bin/Xorg ${DISPLAY} -nolisten tcp -verbose 2 "vt${XDG_VTNR}"
+ExecStart=/bin/sh -c 'trap "echo READY" SIGUSR1; (trap "" SIGUSR1; exec /usr/bin/Xorg ${DISPLAY} -nolisten tcp -verbose 2 "vt${XDG_VTNR}")& wait $!; test $? = 138 && /usr/bin/systemd-notify --ready; wait'
