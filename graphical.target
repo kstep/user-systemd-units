@@ -1,6 +1,6 @@
 [Unit]
 Description=User GUI
-Requires=default.target
+Requires=basic.target
 Requires=dbus.socket
 After=default.target
 After=xorg.target
