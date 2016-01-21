@@ -3,6 +3,7 @@ Description=Socket for Xorg at display %i
 
 [Socket]
 ListenStream=/tmp/.X11-unix/X%i
+ExecStartPost=-/usr/bin/systemctl --user set-environment DISPLAY=:%i
 
 [Install]
 WantedBy=default.target

@@ -10,8 +10,8 @@ Type=notify
 NotifyAccess=all
 SuccessExitStatus=0 1
 Environment=DISPLAY=:%i
-ExecStartPre=/usr/bin/systemctl --user set-environment DISPLAY=:%i
 ExecStart=/bin/sh -c 'trap "sleep 5; /usr/bin/systemd-notify --status=Listening... --ready" SIGUSR1; (trap "" SIGUSR1; exec /usr/bin/Xorg ${DISPLAY} -nolisten tcp -verbose 2 "vt${XDG_VTNR}")& wait $!; test $? = 138 && wait'
 
 [Install]
+Also=xorg@.socket
 WantedBy=graphical.target
