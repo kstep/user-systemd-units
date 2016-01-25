@@ -4,7 +4,6 @@ Before=window-manager.service
 
 [Service]
 Restart=always
+Type=dbus
+BusName=ru.gentoo.KbddService
 ExecStart=/usr/bin/kbdd --nodaemon
-
-[Install]
-WantedBy=graphical.target
