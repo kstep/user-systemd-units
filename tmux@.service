@@ -4,6 +4,7 @@ Before=ssh-agent.service
 
 [Service]
 Type=forking
+TasksMax=4096
 ExecStart=/usr/bin/tmux new-session -d -s %I
 ExecStop=/usr/bin/tmux kill-session -t %I
 Restart=always
