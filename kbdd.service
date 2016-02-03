@@ -7,3 +7,4 @@ Restart=always
 Type=dbus
 BusName=ru.gentoo.KbddService
 ExecStart=/usr/bin/kbdd --nodaemon
+ExecReload=/usr/bin/kill -s SIGHUP $MAINPID
