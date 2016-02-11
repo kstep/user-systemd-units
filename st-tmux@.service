@@ -7,7 +7,7 @@ After=xorg.target
 [Service]
 Type=simple
 EnvironmentFile=/home/kstep/.config/systemd/user/st.conf
-ExecStart=/usr/bin/st -t ${ST_TITLE} -f ${ST_FONT} -e /usr/bin/tmux attach -t %I
+ExecStart=/usr/bin/st -t ${ST_TITLE} -f ${ST_FONT} -e /usr/bin/tmux -v -S %t/tmux-%i attach -t %i
 
 [Install]
 DefaultInstance=default

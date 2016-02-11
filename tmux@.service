@@ -7,8 +7,8 @@ Type=forking
 TasksMax=4096
 Environment="TMUX="
 WorkingDirectory=%t
-ExecStart=/usr/bin/tmux new-session -d -s %I
-ExecStop=/usr/bin/tmux kill-session -t %I
+ExecStart=/usr/bin/tmux -v -S %t/tmux-%i new-session -d -s %i
+ExecStop=/usr/bin/tmux -v -S %t/tmux-%i kill-session -t %i
 Restart=always
 
 [Install]

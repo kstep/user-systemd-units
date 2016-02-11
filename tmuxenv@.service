@@ -6,7 +6,7 @@ After=graphical.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh -c '/usr/bin/systemctl --user show-environment | sed -e "s/=/ /" | xargs -n2 /usr/bin/tmux set-environment -t %I'
+ExecStart=/bin/sh -c '/usr/bin/systemctl --user show-environment | sed -e "s/=/ /" | xargs -n2 /usr/bin/tmux -v -S %t/tmux-%i set-environment -t %i'
 
 [Install]
 DefaultInstance=default
