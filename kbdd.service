@@ -1,6 +1,7 @@
 [Unit]
 Description=Very Simple Layout Switcher
 Before=window-manager.service
+After=xorg.target
 
 [Service]
 Restart=always
