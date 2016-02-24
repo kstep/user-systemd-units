@@ -1,0 +1,8 @@
+[Unit]
+Description=Geary e-mail client
+
+[Service]
+ExecStart=/usr/bin/geary
+
+[Install]
+WantedBy=graphical.target
