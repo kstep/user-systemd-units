@@ -1,0 +1,11 @@
+[Unit]
+Description=Window Tiling For The Win
+After=xorg.target
+
+[Service]
+ExecStart=/home/kstep/.multirust/cargo/bin/wtftw
+Restart=on-failure
+RestartSec=3
+
+[Install]
+Alias=window-manager.service
