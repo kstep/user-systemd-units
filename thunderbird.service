@@ -1,0 +1,8 @@
+[Unit]
+Description=Thunderbird e-mail client
+
+[Service]
+ExecStart=/usr/bin/thunderbird
+
+[Install]
+WantedBy=graphical.target

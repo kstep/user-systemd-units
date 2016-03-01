@@ -1,0 +1,9 @@
+[Unit]
+Description=N1 e-mail client
+
+[Service]
+TasksMax=1024
+ExecStart=/usr/bin/nylas
+
+[Install]
+WantedBy=graphical.target
