@@ -1,0 +1,15 @@
+[Unit]
+Description=TiMidity++ Daemon
+After=sound.target
+
+[Service]
+CPUSchedulingPolicy=fifo
+CPUSchedulingPriority=90
+LimitRTPRIO=50
+LimitRTTIME=infinity
+#Nice=-20
+ExecStart=/usr/bin/timidity -iA -Os
+
+[Install]
+WantedBy=default.target
+Alias=sequencer.service

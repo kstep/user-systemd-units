@@ -1,0 +1,13 @@
+[Unit]
+Description=Connect MIDI devices (%I)
+After=sound.target
+After=sequencer.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c '/usr/bin/aconnect %I'
+ExecStop=/bin/sh -c '/usr/bin/aconnect -d %I'
+
+[Install]
+WantedBy=default.target
