@@ -1,5 +1,6 @@
 [Unit]
 Description=Window Tiling For The Win
+Conflicts=window-manager.service
 After=xorg.target
 
 [Service]
