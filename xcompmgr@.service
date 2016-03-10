@@ -1,0 +1,11 @@
+[Unit]
+Description=Composite Window-effects manager for X.org
+Conflicts=compositor@%i.service
+After=xorg@%i.service
+
+[Service]
+ExecStart=/usr/bin/xcompmgr -d :%I
+
+[Install]
+WantedBy=xorg@%i.service
+Alias=compositor@%i.service

@@ -1,0 +1,13 @@
+[Unit]
+Description=Composite Window-effects manager for X.org
+Conflicts=compositor@%i.service
+After=xorg@%i.service
+
+[Service]
+Type=dbus
+BusName=com.github.chjj.compton._%i
+ExecStart=/usr/bin/compton --dbus -d :%I
+
+[Install]
+WantedBy=xorg@%i.service
+Alias=compositor@%i.service
