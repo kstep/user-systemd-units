@@ -1,0 +1,11 @@
+[Unit]
+Description=Composite Window-effects manager for X.org
+Conflicts=compositor.service
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/compton
+
+[Install]
+WantedBy=xorg.target
+Alias=compositor.service
