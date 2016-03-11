@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=com.github.chjj.compton._0
+Exec=/bin/false
+SystemdService=compton@0.service

@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=ru.gentoo.KbddService
+Exec=/bin/false
+SystemdService=kbdd.service
