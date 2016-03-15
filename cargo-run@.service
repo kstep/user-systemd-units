@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Rust crate %I with Cargo
+ConditionFileNotEmpty=%I/Cargo.toml
+
+[Service]
+Type=simple
+#Environment=RUST_BACKTRACE=1
+TTYPath=/dev/tty
+WorkingDirectory=%I
+ExecStart=/home/kstep/.multirust/bin/cargo run --release
+
