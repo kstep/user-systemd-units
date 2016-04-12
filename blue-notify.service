@@ -1,0 +1,13 @@
+[Unit]
+Description=Bluetooth connection notification service
+Requires=dbus.service
+Requires=bluetooth.target
+After=bluetooth.target
+After=dbus.service
+
+[Service]
+Type=simple
+ExecStart=/home/kstep/.multirust/cargo/bin/blue-notify
+
+[Install]
+WantedBy=default.target
