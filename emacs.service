@@ -1,0 +1,11 @@
+[Unit]
+Description=Emacs editor
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/emacs
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=graphical.target

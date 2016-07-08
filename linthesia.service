@@ -1,0 +1,10 @@
+[Unit]
+Description=Linthesia Music Playing Game
+Requires=timidity.service
+After=timidity.service
+
+[Service]
+ExecStart=/usr/games/linthesia
+
+[Install]
+WantedBy=graphical.target

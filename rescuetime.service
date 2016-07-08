@@ -1,0 +1,9 @@
+[Unit]
+Description=RescueTime time tracker
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rescuetime
+
+[Install]
+WantedBy=graphical.target

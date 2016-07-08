@@ -1,0 +1,8 @@
+[Unit]
+Description=Run %I in Wine
+
+[Service]
+ExecStart=/usr/bin/wine "%h/.wine/drive_c/Program Files (x86)/%I"
+
+[Install]
+WantedBy=graphical.target

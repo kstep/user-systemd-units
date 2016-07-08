@@ -1,0 +1,8 @@
+[Unit]
+Description=MuseScore notes editor
+
+[Service]
+ExecStart=/usr/bin/musescore
+
+[Install]
+WantedBy=graphical.target

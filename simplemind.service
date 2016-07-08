@@ -1,0 +1,9 @@
+[Unit]
+Description=SimpleMind mindmapping tool
+
+[Service]
+WorkingDirectory=%h/.wine/drive_c/Program Files (x86)/ModelMakerTools/SimpleMind/1.12.0
+ExecStart=/usr/bin/wine ./SimpleMindPro.exe
+
+[Install]
+WantedBy=graphical.target

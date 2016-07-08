@@ -1,0 +1,8 @@
+[Unit]
+Description=FreeMind mind-mapping tool
+
+[Service]
+ExecStart=/usr/bin/freemind
+
+[Install]
+WantedBy=graphical.target

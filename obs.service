@@ -1,0 +1,8 @@
+[Unit]
+Description=OBS Studio Live Streaming Client
+
+[Service]
+ExecStart=/usr/bin/obs
+
+[Install]
+WantedBy=graphical.target
