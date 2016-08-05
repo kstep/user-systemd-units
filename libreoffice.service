@@ -1,0 +1,8 @@
+[Unit]
+Description=LibreOffice
+
+[Service]
+ExecStart=/usr/bin/libreoffice
+
+[Install]
+WantedBy=graphical.target
