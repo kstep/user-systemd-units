@@ -1,0 +1,11 @@
+[Unit]
+Description=Syncthing GTK GUI
+Wants=syncthing.service
+After=syncthing.service
+
+[Service]
+ExecStart=/usr/bin/syncthing-gtk --minimized
+ExecStop=/usr/bin/syncthing-gtk --quit
+
+[Install]
+WantedBy=graphical.target
