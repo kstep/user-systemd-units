@@ -1,0 +1,9 @@
+[Unit]
+Description=IntellijIDEA IDE
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/idea.sh
+
+[Install]
+WantedBy=graphical.target
