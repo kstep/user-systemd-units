@@ -7,7 +7,7 @@ After=dbus.service
 
 [Service]
 Type=simple
-ExecStart=/home/kstep/.multirust/cargo/bin/blue-notify
+ExecStart=/home/kstep/.cargo/bin/blue-notify
 
 [Install]
 WantedBy=default.target

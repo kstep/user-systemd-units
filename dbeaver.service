@@ -1,0 +1,8 @@
+[Unit]
+Description=Database management GUI
+
+[Service]
+ExecStart=/usr/bin/dbeaver-ee
+
+[Install]
+WantedBy=graphical.target

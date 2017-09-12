@@ -2,7 +2,7 @@
 Description=Telegram Messaging Client
 
 [Service]
-ExecStart=/usr/bin/telegram
+ExecStart=/usr/bin/telegram-desktop
 
 [Install]
 WantedBy=graphical.target

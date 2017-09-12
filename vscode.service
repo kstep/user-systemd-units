@@ -1,0 +1,8 @@
+[Unit]
+Description=Visual Studio Code
+
+[Service]
+ExecStart=/usr/bin/code --wait
+
+[Install]
+WantedBy=graphical.target

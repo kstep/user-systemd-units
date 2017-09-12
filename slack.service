@@ -1,0 +1,8 @@
+[Unit]
+Description=Slack Messaging Client
+
+[Service]
+ExecStart=/usr/bin/slack
+
+[Install]
+WantedBy=graphical.target

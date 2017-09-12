@@ -1,0 +1,8 @@
+[Unit]
+Description=DeadBeef Music Player
+
+[Service]
+ExecStart=/usr/bin/deadbeef
+
+[Install]
+WantedBy=graphical.target

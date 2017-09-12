@@ -1,0 +1,8 @@
+[Unit]
+Description=VKontakte Music Player
+
+[Service]
+ExecStart=/usr/bin/vkplayer
+
+[Install]
+WantedBy=graphical.target

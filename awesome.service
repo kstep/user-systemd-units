@@ -4,6 +4,7 @@ Conflicts=window-manager.service
 After=xorg.target
 
 [Service]
+ExecStartPre=/usr/bin/sleep 5
 ExecStart=/usr/bin/awesome
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=on-failure

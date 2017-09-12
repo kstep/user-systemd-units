@@ -3,7 +3,7 @@ Description=Google Chrome Browser
 
 [Service]
 TasksMax=1024
-ExecStart=/usr/bin/chromium --restore-last-session
+ExecStart=/usr/bin/chromium --restore-last-session --auth-server-whitelist="sit.adform.com, trust.adform.com, dev.sit.cloud.adform.com"
 Restart=always
 RestartSec=0
 
