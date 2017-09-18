@@ -1,0 +1,9 @@
+[Unit]
+Description=Blueman Applet
+
+[Service]
+ExecStart=/usr/bin/blueman-applet
+
+[Install]
+WantedBy=graphical.target
+
