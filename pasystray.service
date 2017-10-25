@@ -1,0 +1,8 @@
+[Unit]
+Description=PulseAudio Volume Systray Control
+
+[Service]
+ExecStart=/usr/bin/pasystray
+
+[Install]
+WantedBy=graphical.target
