@@ -1,0 +1,8 @@
+[Unit]
+Description=Steam Store Client
+
+[Service]
+ExecStart=/usr/bin/steam
+
+[Install]
+WantedBy=graphical.target
