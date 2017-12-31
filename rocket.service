@@ -1,0 +1,8 @@
+[Unit]
+Description=Rocket RDP Client
+
+[Service]
+ExecStart=/usr/bin/rocket-depot
+
+[Install]
+WantedBy=graphical.target
