@@ -1,0 +1,9 @@
+[Unit]
+Description=XFCE4 Terminal
+
+
+[Service]
+ExecStart=/usr/bin/xfce4-terminal
+
+[Install]
+WantedBy=graphical.target

@@ -9,7 +9,8 @@ Before=xorg.target
 Type=simple
 SuccessExitStatus=0 1
 Environment=DISPLAY=:%i
-ExecStart=/usr/bin/Xorg ${DISPLAY} -nolisten tcp -verbose 2 "vt${XDG_VTNR}"
+#ExecStart=/usr/bin/Xorg ${DISPLAY} -nolisten tcp -verbose 2 "vt${XDG_VTNR}"
+ExecStart=/usr/bin/Xorg ${DISPLAY} -nolisten tcp -verbose 2 "vt5"
 
 #Type=notify
 #NotifyAccess=all

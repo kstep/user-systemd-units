@@ -1,0 +1,9 @@
+[Unit]
+Description=Load Xresources
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xrdb -merge $HOME/.Xresources
+
+[Install]
+WantedBy=graphical.target

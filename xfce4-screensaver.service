@@ -1,0 +1,13 @@
+[Unit]
+Description=XFCE4 Screensaver
+Conflicts=screensaver.service
+
+
+[Service]
+Type=dbus
+BusName=org.xfce.ScreenSaver
+ExecStart=/usr/bin/xfce4-screensaver
+
+[Install]
+WantedBy=graphical.target
+Alias=screensaver.service

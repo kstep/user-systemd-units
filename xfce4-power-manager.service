@@ -1,0 +1,13 @@
+[Unit]
+Description=XFCE4 Power Manager
+Conflicts=power-manager.service
+
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.PowerManagement
+ExecStart=/usr/bin/xfce4-power-manager --no-daemon
+
+[Install]
+WantedBy=graphical.target
+Alias=power-manager.service

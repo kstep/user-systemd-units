@@ -6,7 +6,7 @@ After=ssh-agent.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-Environment=SSH_ASKPASS=/usr/lib/ssh/ssh-askpass
+Environment=SSH_ASKPASS=/usr/bin/systemd-ask-password
 ExecStart=/usr/bin/ssh-add %h/.ssh/%I
 ExecStop=/usr/bin/ssh-add -d %h/.ssh/%I
 

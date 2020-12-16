@@ -1,7 +1,6 @@
 [Unit]
 Description=Awesome Window Manager
 Conflicts=window-manager.service
-After=xorg.target
 
 [Service]
 ExecStartPre=/usr/bin/sleep 5

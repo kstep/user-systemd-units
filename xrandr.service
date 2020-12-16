@@ -1,0 +1,9 @@
+[Unit]
+Description=Setup XRandR Settings
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xrandr --dpi 120
+
+[Install]
+WantedBy=graphical.target

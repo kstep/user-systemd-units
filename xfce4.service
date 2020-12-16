@@ -1,0 +1,9 @@
+[Unit]
+Description=XFCE4 Session
+
+[Service]
+ExecStart=/usr/bin/startxfce4
+
+[Install]
+WantedBy=default.target
+Alias=xsession.service
